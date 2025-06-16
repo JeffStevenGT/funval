@@ -1,8 +1,3 @@
-import 'particles.js';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
 
 
 // Configurar partículas
