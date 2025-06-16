@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="./main.js"></script>
+  <title>Gestión de Usuarios</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    h2 { margin-top: 30px; }
+    input, select { margin: 5px 0; display: block; }
+    .usuario { margin-bottom: 10px; }
+    .user-list { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>Sistema de Gestión de Usuarios</h1>
+
+  <h2>1. Mostrar Usuarios</h2>
+  <div id="usuarios" class="user-list"></div>
+
+  <h2>2. Agregar Usuario</h2>
+  <form id="formAgregar">
+    <input type="text" id="nombreNuevo" placeholder="Nombre" required />
+    <input type="text" id="rolNuevo" placeholder="Rol" required />
+    <input type="number" id="edadNuevo" placeholder="Edad" required />
+    <button type="submit">Agregar</button>
+  </form>
+
+  <h2>3. Actualizar Usuario</h2>
+  <form id="formActualizar">
+    <input type="number" id="idActualizar" placeholder="ID del usuario" required />
+    <input type="text" id="nombreActualizar" placeholder="Nuevo Nombre" />
+    <input type="text" id="rolActualizar" placeholder="Nuevo Rol" />
+    <input type="number" id="edadActualizar" placeholder="Nueva Edad" />
+    <button type="submit">Actualizar</button>
+  </form>
+
+  <h2>4. Filtrar por Rol</h2>
+  <input type="text" id="filtroRol" placeholder="Escribe un rol (admin, editor...)" />
+  <button onclick="filtrarPorRol()">Filtrar</button>
+
+  <script>
+    let usuarios = [
+      { id: 1, nombre: "Ana", rol: "admin", edad: 28 },
+      { id: 2, nombre: "Luis", rol: "editor", edad: 34 },
+      { id: 3, nombre: "Carla", rol: "viewer", edad: 22 },
+    ];
+
+    // Mostrar usuarios
+    function mostrarUsuarios(lista = usuarios) {
+      const contenedor = document.getElementById("usuarios");
+      contenedor.innerHTML = "";
+      lista.forEach(({ id, nombre, rol, edad }) => {
+        contenedor.innerHTML += `<div class="usuario">Usuario: ${nombre}, Rol: ${rol}, Edad: ${edad}, ID: ${id}</div>`;
+      });
+    }
+
+    // Agregar usuario
+    function agregarUsuario(lista, nuevo) {
+      return [...lista, nuevo];
+    }
+
+    // Actualizar usuario
+    function actualizarUsuario(lista, id, nuevosDatos) {
+      return lista.map(usuario =>
+        usuario.id === id ? { ...usuario, ...nuevosDatos } : usuario
+      );
+    }
+
+    // Filtrar por rol
+    function filtrarPorRol() {
+      const rol = document.getElementById("filtroRol").value.trim();
+      const filtrados = usuarios.filter(({ rol: r }) => r === rol);
+      mostrarUsuarios(filtrados);
+    }
+
+    // Manejar formulario agregar
+    document.getElementById("formAgregar").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById("nombreNuevo").value;
+      const rol = document.getElementById("rolNuevo").value;
+      const edad = parseInt(document.getElementById("edadNuevo").value);
+      const id = usuarios.length ? usuarios[usuarios.length - 1].id + 1 : 1;
+      const nuevoUsuario = { id, nombre, rol, edad };
+      usuarios = agregarUsuario(usuarios, nuevoUsuario);
+      mostrarUsuarios();
+      this.reset();
+    });
+
+    // Manejar formulario actualizar
+    document.getElementById("formActualizar").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const id = parseInt(document.getElementById("idActualizar").value);
+      const nombre = document.getElementById("nombreActualizar").value;
+      const rol = document.getElementById("rolActualizar").value;
+      const edad = document.getElementById("edadActualizar").value;
+      const nuevosDatos = {
+        ...(nombre && { nombre }),
+        ...(rol && { rol }),
+        ...(edad && { edad: parseInt(edad) }),
+      };
+      usuarios = actualizarUsuario(usuarios, id, nuevosDatos);
+      mostrarUsuarios();
+      this.reset();
+    });
+
+    // Mostrar inicial
+    mostrarUsuarios();
+  </script>
+</body>
+</html>

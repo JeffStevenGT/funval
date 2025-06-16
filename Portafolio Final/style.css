@@ -1,0 +1,979 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+  /* BARRA DE NAVEGACION */  
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 20px;
+}
+
+
+.navegacion {
+    position: relative;
+    display: flex;   
+    font-family: 'Segoe UI', sans-serif;   
+}
+
+  .navegacion li a {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+  .navegacion li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 3px;
+    background: #54dfa2;
+    transition: 0.3s;
+}
+  .navegacion li:hover a::before {
+    width: 80%;
+}
+  .navegacion li.active a::before {
+    width: 0;
+}
+
+/* HOLA SOY JEFF */
+
+.AboutMe {
+  display: flex;
+  align-items: end;
+  margin-left: -200px;
+}
+
+.descripcion {
+  padding: 30px 160px;
+  font-size: 30px;
+  font-family: "Zain";
+  font-style: italic;
+  line-height: 0.8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  margin-bottom: -10px;
+
+}
+h2 {  
+  color: #5ffdb6;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  line-height: 0.8;
+  text-align: center;
+
+ }
+
+ .imagen-webs {
+  margin-left: -120px;
+  z-index: 9999;;
+ }
+
+/* FOTO DE PERFIL */
+:root {
+  --primary: #03042a;
+  --secondary: #5ffdb6;
+  --size: 90px
+}
+.foto-container {
+  position: relative;   
+  cursor: pointer;
+  animation: float 4s ease-in-out infinite;
+  width: 200px;   
+  height: 200px;  
+  bottom: 0;
+  left: 28%;
+  
+}
+.foto-perfil {
+  width: var(--size); height: var(--size);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #45b886;
+  transition: all 0.3s ease;
+  width: 200px;   
+  height: 200px; 
+}
+.foto-container::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border-radius: 50%;
+  z-index: -1;
+  animation: rotate 4s linear infinite;
+  fill: blur(20px);
+  opacity: 0.7;
+}
+.cuadro-indicador {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(27, 28, 73, 0.493);
+  border: 2px solid #fff;
+  border-radius: 100%;
+  right: 10px;
+  animation: pulse 2s infinite;
+  margin-top: -4px;
+}
+.foto-container:hover .foto-perfil {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #54dfa2;
+}
+.foto-container:hover::before {
+  opacity: 0.5;
+  filter: blur(25px);
+}
+.foto-container:hover .cuadro-indicador {
+  background-color: #54dfa2;
+  animation: none;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1);}
+  50% {transform: translateY(-10px);}
+}
+
+
+
+/* BOTON */
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  color: #fff;
+  border: 1px #c3c6ce solid;
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1; 
+  font-size: 15px;
+  padding: 10px;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    #55e6a5,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+
+/* Hover rpoyectos */
+.contenedor-tio2:hover {
+ border-color: #55e6a5;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ cursor: pointer;
+}
+
+/* MY SKILLS*/
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 0.25rem; 
+  font-size: 0.875rem;   
+  
+}
+
+.list1 {
+  display: flex ;
+  gap: 16px;
+  margin-bottom: 25px;
+  gap: 25px;
+}
+
+.list2 {
+  display: flex;
+  gap: 25px;
+}
+
+.matri {
+  display: flex;
+  margin-top: 15px;
+}
+
+/* CARDS */
+
+/* Card */
+.card {
+ width: 120px;
+ height: 120px;
+ border-radius: 20px;
+ background: #3d3a4e;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #55e6a5;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+ cursor: pointer;
+ font-size: 12px;
+}
+
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #55e6a5;
+ color: #ffffff;
+ font-size: 1rem;
+ font-weight: bold;
+ font-family: 'Segoe UI', sans-serif;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+
+/* Card 9 */
+.card9 {
+ width: 265px;
+ height: 265px;
+ border-radius: 20px;
+ background: #3d3a4e;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin-left: 25px;
+ flex-direction: column; 
+ font-family: "Zain";
+}
+
+.text-title {
+  font-size: 80px;
+  font-family: "Luckiest Guy", cursive;
+}
+.text-body {
+  font-size: 35px;
+  line-height: 30px;
+  color: #5ffdb6;
+}
+.card-details {
+  text-align: center;      
+  margin-top: 30px;
+}
+.button2 {
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  color: #fff;
+  border: 1px #c3c6ce solid;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.button2:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content2 {
+  position: relative;
+  z-index: 1;
+}
+
+.button2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    #55e6a5,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+/* 4 */ 
+
+.text-title {
+  font-size: 90px;
+  font-family: "Luckiest Guy", cursive;
+  margin-top: -40px;
+  color: #5ffdb6;
+}
+
+.contenedor-hijo {
+  display: flex;
+  gap: 25px;
+}
+.contenedor-tio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: -130px;
+  margin-top: 50px;
+
+}
+.contenedor-tio1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contenedor-tio2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* cuadro 1 */
+.cuadro1 {
+
+ width: 315px;
+ height: 480px;
+ position: relative;
+ padding: 1.8rem;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center; 
+}
+
+h4 {
+  text-align: center;
+  color: #5ffdb6;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 60px
+}
+.frase {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.button3 {
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  color: #fff;
+  border: 1px #c3c6ce solid;
+  cursor: pointer;
+  margin-top: 30px;
+  
+
+}
+
+.button3:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content3 {
+  position: relative;
+  z-index: 1;
+}
+
+.button3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    #55e6a5,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+/*cuadro 2 */
+
+#fondo1 {
+  background-image: url(img/web1.png);
+  
+  
+}
+
+.cuadro2 {
+  width: 250px;
+  height: 430px;
+  border-radius: 20px;
+  background: #3d3a4e;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+
+}
+
+/*cuadro 3 */
+
+#fondo2 {
+  background-image: url(img/web2.png); 
+  
+}
+
+.cuadro3 {
+  width: 250px;
+  height: 430px;
+  border-radius: 20px;
+  background: #3d3a4e;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+
+}
+
+/*cuadro 4 */
+
+#fondo3 {
+  background-image: url(img/web3.png);
+  
+}
+
+.cuadro4 {
+  width: 250px;
+  height: 430px;
+  border-radius: 20px;
+  background: #3d3a4e;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible; 
+
+}
+
+
+ul {
+  list-style: none;
+}
+
+/* AJUTE EL TAMA;O DE LAS IMAGENES */
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* PAGINA 4 */
+
+.content1 {
+  background-image: url(img/fondo-abstracto-con-textura.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+
+}
+
+.content1-txt {
+  width: 40%;
+}
+
+h3 {
+  text-align: center;
+  color: #5ffdb6;
+  font-family: "Zain";
+  font-size: 70px;
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #5ffdb6; 
+}
+
+ 
+/* Contenedor principal horizontal */
+
+.container {
+  display: flex;                
+  height: 100vh;
+  width: 500vw;                
+  transition: transform 0.8s ease-in-out;
+}
+
+.panel {
+  min-width: 100vw;         
+  height: 100vh;
+  flex-shrink: 0;             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+
+#home     { background: linear-gradient(#000000, #0e1827);; }  
+#about    { background: linear-gradient(#000000, #0e1827);; }  
+#skills   { background: linear-gradient(#000000, #0e1827);; }  
+#projects { background: linear-gradient(#000000, #0e1827);; }  
+#contact  { background: linear-gradient(#000000, #0e1827);; }  
+
+
+/* FORMULARIO */
+
+.containerr {
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 65rem;
+  font-family: "Zain";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.contacto-info {
+  background-color: #288058;
+  color: #fff;
+  padding: 30px;
+  width: 40%;
+  font-weight: 300;
+  text-align: left;
+  
+}
+
+.contacto-info h2 {
+  margin-top: 0;
+
+}
+
+.contacto-info p {
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+.contacto-info img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.contacto-form {
+  padding: 30px;
+  width: 60%;
+}
+
+.contacto-form h2 {
+  margin-top: 0;
+  color: #34495e;
+}
+
+.contacto-form p {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contacto-form button {
+  background-color: #288058;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold  
+}
+
+.contacto-form button:hover {
+  background-color: #3dad7d;
+  font-weight: bold
+}
+
+.get-in-touch {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  
+}
+
+.contact-us {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.feel-free {
+  font-family: "Zain";
+  font-weight: 700;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  section {
+    font-size: 1em;
+    padding: 6em 1em 2em;
+  }
+
+  nav a {
+    font-size: 0.95em;
+  }
+
+  #fixed-box {
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  section {
+    font-size: 0.95em;
+  }
+
+  #fixed-box {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    font-size: 0.9em;
+  }
+
+  nav a {
+    font-size: 0.85em;
+  }
+
+  #fixed-box {
+    padding: 0.6em;
+    font-size: 0.8em;
+  }
+}
+
+
+
+/* REDES SOCIALES */
+
+/* From Uiverse.io by wilsondesouza */ 
+
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+  padding: 0.5rem;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: 100%;
+  right: 110%;
+  transform: translateY(200%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #1b1a1a; 
+  background-color: #5ffdb6;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+  justify-content: center;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+#fixed-box {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* PARTICULAS */ 
+
+/* ---- reset ---- */ 
+body{ 
+  margin:0; 
+  font:normal 75% Arial, Helvetica, sans-serif; 
+} 
+canvas{ 
+  display: block; 
+} 
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+  position:absolute; 
+  width: 100%; 
+  height: 100%; 
+  background-color: transparent; 
+  background-image: url(""); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: 50% 50%; 
+} 
+  /* ---- stats.js ---- */ 
+  .count-particles{ 
+    background: #000022; 
+    position: absolute; 
+    top: 48px; left: 0; 
+    width: 80px; 
+    color: #13E8E9; 
+    font-size: .8em; 
+    text-align: left; 
+    text-indent: 4px; 
+    line-height: 14px; 
+    padding-bottom: 2px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+  } 
+  .js-count-particles{ 
+    font-size: 1.1em; 
+  } 
+  #stats, .count-particles{ 
+    margin-top: 5px; 
+    margin-left: 5px; 
+  } #stats{ 
+    border-radius: 3px 3px 0 0; 
+    overflow: hidden; 
+  } 
+  .count-particles{ 
+    border-radius: 0 0 3px 3px; 
+  }
+
+  /* mis estilos */
+
+.containMain {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 8rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.contentt {
+  z-index: 9999;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+
+/* CARRUSELL */
+
+.swiper-slide {
+    border-radius: 15px;
+}
+
+.swiper-slide img {
+    width: 295px;
+    height: 420px;
+    border-radius: 15px;
+}
+
+.swiper-txt {
+    position: absolute;
+    padding: 25px;
+}
+

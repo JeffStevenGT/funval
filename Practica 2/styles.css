@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.cuadro {
+    width: 260px;
+    height: 585px;
+    background-color: #10151b;
+}
+.imagen1{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start; 
+    align-items: center; 
+    width: 10px;  
+    margin: auto;
+    padding: 20px opx 10px 0px;
+}
+h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    margin: 15px 0px 10px 19px;
+    
+}
+.email-password input{ /* "input" todos los elementos input que se encuentren dentro de un contenedor con la clase "email-password"*/
+    background-color: #2a2f36; 
+    color: white;               
+    border: 1px solid #cccccc;             
+    padding: 8px;
+    margin-left: 19px;
+    padding: 12px;                
+    font-size: 10px;              
+    width: 76%;                  
+    margin-bottom: 10px; /* Agregar espacio entr los inputs */               
+}
+.checkbox{
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    margin: 5px;
+    margin-left: 19px;
+    gap: 6px;
+}
+.parrafo1{
+    display: block;
+    margin-left: 66px;
+}
+.botones button { /*seleciona los elemento de "button" que estan dentro de un contenedor*/
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    margin-left: 19px;
+    cursor: pointer; /*muestra la manito del cursor al interactuar con el boton*/
+}
+
+.botones button:first-child { /*seleciona el primer hijo de "button" dentro de la clase "botones"*/
+    background-color: #2a2f36;
+    color: #ffffff;
+}
+
+.botones button:last-child { /*seleciona el ultimo hijo de "button"dentro de la clase "botones"*/
+    background-color: #6a0dad;
+    color: #ffffff;
+}
+.parrafo2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 19px;
+    padding: 150px 0px 10px;
+}
+.redes-sociales{
+    display: flex;
+    list-style: none; 
+    gap: 7px;
+}
+.imagen2 {
+    display: flex;
+    list-style: none;           
+    border: white;
+    margin-left: 19px;
+    height: 35px;
+    border: 1px solid #2a2f36;
+}
+.imagen3 {
+    display: flex;          
+    border: white;
+    height: 35px;
+    border: 1px solid #2a2f36;
+}
+.imagen4 {
+    display: flex;          
+    border: white;
+    height: 35px;
+    border: 1px solid #2a2f36;
+}
+.imagen5 {
+    display: flex;
+    border: white;
+    height: 35px;
+    border: 1px solid #2a2f36;
+}
+.imagen6 {
+    display: flex;
+    list-style: none;           
+    border: white;
+    height: 35px;
+    border: 1px solid #2a2f36;
+}
+.politica-privacidad{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 19px;
+    list-style: none; 
+    padding-top: 10px;
+    font-size: 9px;
+}

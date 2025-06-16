@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.cuadro {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
+table{
+    border: solid 2px;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 8px;
+    border-collapse: collapse r;
+}
+
+thead th {
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 5px;
+}
+tbody td{
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 5px;
+}
+button{
+    color: ;
+}

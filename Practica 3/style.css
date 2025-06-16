@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    background-color: #4caf50;
+    color: white; 
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header h1{
+    padding: 40px 200px;
+}
+header div{
+    display: flex;
+    gap: 30px;
+    background-color: #333333;
+    font-family: monospace;
+    color: white;
+    padding: 16px 25px;
+    font-size: 16px;
+}
+main{
+    /*margin-top: 35px;
+    margin-left: 20px;*/
+    background-color: #fad7f6e1;
+    padding: 30px 20px 90px 20px;
+}
+button {
+    background-color: green;
+    color: white; 
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+main > div:nth-child(2) { /*">" selector hijo directo - "div:nth-child(2)" Selecciona el segundo hijo (número 2) de main, pero solo si es una etiqueta div*/
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos arriba */
+    gap: 700px; 
+    margin-top: 20px; 
+}
+footer{
+    margin-top: 40px;
+}
+.subtitulo2{
+    margin-left: 20px;
+}
+.parrafo1{
+    font-size: 20px;
+}
+.parrafo2{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.lista1{
+    margin-left: 40px;
+}
+.parrafo3{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.cuadro{
+    background-color: #cccccc;
+    margin-left: 20px;
+    border: solid 1px #b9b2b2;
+    margin-top: 20px; 
+    margin-bottom: 25px;
+}
+.lista1{
+    margin-bottom: 10px;
+}
+.parrafo4{
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.subtitulo1{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

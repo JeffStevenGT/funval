@@ -1,0 +1,24 @@
+#cabecera {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+    color: white;
+
+}
+ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+ol {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}

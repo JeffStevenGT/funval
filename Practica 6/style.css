@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #014a8f;
+}
+.container {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 #014a8f;
+}
+.container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.container button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #014a8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: #f47c31;
+}
+    .mensaje1 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
