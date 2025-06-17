@@ -299,6 +299,8 @@ body {
     gap: 3px;
     padding: 5px 0;
     border-radius: 10px;
+    box-shadow: 0 4px 0 #228b88;
+
 }
 
 .ties {
@@ -312,6 +314,7 @@ body {
     padding: 5px 0;
     border-radius: 10px;  
     background-color: #a9bfc9; 
+    box-shadow: 0 4px 0 #707e85;
 }
 
 .cpu {
@@ -325,7 +328,7 @@ body {
     padding: 5px 0;
     border-radius: 10px;
     background-color: #f3b337;  
-    
+    box-shadow: 0 4px 0 #bb8b2a;
 }
 
 .parrafo {
