@@ -1,0 +1,478 @@
+
+* {
+    margin: 0;   
+}
+
+body {                     
+    width: 100vw;          
+    height: 100vh;  
+    display: grid;
+    place-items: center;
+    background-color: #182a33;
+}   
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+}
+
+.x {
+  color: #31c5bf;  
+  width: 20px;
+  height: 20px;
+}
+
+.circulo {
+  color: #f3b337;  
+  width: 17px;
+  height: 17px;
+}
+
+
+
+/* --------- CONTENEDOR1 --------- */
+
+
+.contenedor1 {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    gap: 15px; 
+    visibility: hidden;
+}
+
+.bloque7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 32px;  
+    margin-bottom: -8px;  
+}
+
+.bloque8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #1f3740;
+    box-shadow: 0 8px 0 #112128;
+    gap: 11px;
+    
+}
+.pick {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #a8bfc6;
+}
+
+.remember {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    color: #a8bfc6;
+}
+
+.sub-bloque8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: #112128;
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.svg1 {
+    height: 40px;
+    width: 40px;
+    color: #a8bfc6;
+}
+
+.contenedor-svg1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 120px;
+    height: 55px;
+    border-radius: 10px;    
+
+}
+
+.contenedor-svg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: #a8bfc6;
+    width: 120px;
+    height: 55px;
+    border-radius: 10px;    
+    color: #112128;
+}
+.svg2 {
+    height: 32px;
+    width: 32px;
+}
+
+.bloque9 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    background-color: #f3b337;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #c98b12;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #112128;
+    font-size: 12px;
+}
+
+.bloque10 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    background-color: #a7bfcb;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #6a7a81;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #112128;
+    font-size: 12px;
+}
+
+/* --------- CONTENEDOR 2 --------- */
+
+.bloques {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor2 {
+    width: 360px;
+    height: 500px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+
+/* BLOQUE 1 */
+
+.bloque1 {
+    display: flex;
+    gap: 65px;
+
+
+}
+
+.sub-bloque1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 32px;
+    
+}
+
+.sub-bloque2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;  
+    gap: 8px;   
+    border-radius: 10px;  
+    background-color: #1f3540;
+    box-shadow: 0 4px 0 #112128;
+}
+
+.x2 {
+    color: #a7bfcb;
+    width: 17px;
+    height: 17px;
+
+}
+.turn {
+    font-size: 10px;
+    color: #a7bfcb;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.sub-bloque3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;   
+    background-color: #a9bfc9;
+    box-shadow: 0 4px 0 #6d8897;
+}
+
+.arrow-circle {
+    width: 20px;
+    height: 20px;
+    color: #6b2a2a;
+}
+
+/* BLOQUE 2 */
+
+.bloque2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cuadrados {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: #1f3540;
+    box-shadow: 0 6px 0 #112128;
+
+}
+
+
+.sub-bloque4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sub-bloque5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.sub-bloque6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+/* BLOQUE 3 */
+
+.bloque3 {
+    gap: 15px;
+}
+
+.you {
+    background-color: #31c5bf; 
+    width: 90px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    gap: 3px;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.ties {
+    width: 90px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px 0;
+    border-radius: 10px;  
+    background-color: #a9bfc9; 
+}
+
+.cpu {
+    width: 90px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color: #f3b337;  
+    
+}
+
+.parrafo {
+    font-size: 8px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.numeros {
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+/* --------- CONTENEDOR 3 --------- */
+
+.contenedor3 {
+    position: absolute;
+    display: flex;
+    place-items: center;
+    background-color: #1f3540;
+    z-index: 1;
+    height: 200px;
+    width: 100vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+    visibility: hidden;
+}
+
+
+
+.you-won {
+    align-items: center;
+    justify-content: center;   
+    color: #8fa5ae;
+}
+
+/* Bloque 4 */
+
+.bloque4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.x3 {
+    width: 60px;
+    height: 60px;
+}
+
+.takes-the-round {
+    font-size: 30px;
+    color: #31c5bf;  
+
+}
+
+/* Bloque 5 */
+
+.bloque5 {
+    display: flex;
+    gap: 15px;
+    font-size: 11px;
+    color: #243138;
+
+}
+
+.quit {
+    display: flex;
+    background-color: #a9bfc9;
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #6a8896;
+}
+
+.next-round {
+    display: flex;
+    background-color: #f3b337;
+    width: 90px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #c98b12;
+}
+
+
+
+
+/* --------- CONTENEDOR 4 --------- */
+
+.contenedor4 {
+    position: absolute;
+    display: flex;
+    place-items: center;
+    background-color: #1f3540;
+    z-index: 4;
+    height: 200px;
+    width: 100vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+    gap: 13px;
+    visibility: hidden;
+
+}
+
+.restart-game{
+    font-size: 35px;
+    color: #8fa5ae;
+}
+
+.bloque6{
+    display: flex;
+    place-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    color: #243138;
+}
+
+.no-cancel {
+    display: flex;
+    background-color: #a9bfc9;
+    width: 80px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #6a8896;
+    font-size: 10px;
+}
+
+.yes-restart {
+    display: flex;
+    background-color: #f3b337;
+    width: 90px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #c98b12;
+    font-size: 10px;
+}
