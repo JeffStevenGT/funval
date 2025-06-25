@@ -62,3 +62,4 @@ links.forEach(link => {
     section.scrollIntoView({ behavior: 'smooth' });
   });
 });
+

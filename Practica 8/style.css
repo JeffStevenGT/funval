@@ -43,7 +43,7 @@ body {
     width: 100vw;
     font-family: "M PLUS Rounded 1c", sans-serif;
     gap: 15px; 
-    visibility: hidden;
+
 }
 
 .bloque7 {
@@ -358,7 +358,7 @@ body {
     font-weight: 700;
     font-style: normal;
     justify-content: center;
-    visibility: hidden;
+
 }
 
 
@@ -439,7 +439,7 @@ body {
     font-style: normal;
     justify-content: center;
     gap: 13px;
-    visibility: hidden;
+
 
 }
 
