@@ -11,38 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Proyecto Final</title>
 </head> 
-<body class="flex flex-col gap-7 md:gap-5">
+<body class="flex flex-col gap-7 md:gap-5 relative">
     <header class="flex flex-col justify-center items-center gap-8 mt-6 md:flex md:flex-row md:justify-between md:px-8 lg:mx-3">
-        <div>
+        <div class="-ml-108 md:ml-0">
             <img src="./src/images/icons/logo-f7862584.svg" class="w-32 md:w-23 xl:w-30" alt="logo-windbnb">
         </div>
         <div class="flex gap-[1px] font-medium justify-center">
-            <input type="text" placeholder="Add location" class="text-center items-center justify-center rounded-l-xl shadow-md text-[#8a8b8b] w-60 h-17 px-4  text-[17px] outline-none
-            md:w-30 md:h-10 md:text-[11px]
-            xl:w-35 xl:h-14 xl:px-4  xl:text-[14px]
-            2xl:w-50 2xl:h-18 2xl:px-4 2xl:text-[15px]"></input>   
-            <input type="text" placeholder="Add guests" class="text-center items-center justify-center shadow-md text-[#8a8b8b] w-60 h-17 px-4 text-[17px] outline-none
-            md:w-30 md:h-10 md:text-[11px]
-            xl:w-35 xl:h-14 xl:px-4  xl:text-[14px]
-            2xl:w-50 2xl:h-18 2xl:px-4 2xl:text-[15px]"></input> 
-            <button class="flex w-20 h-17 text-center items-center justify-center rounded-r-xl shadow-md cursor-pointer
-            md:w-13 md:h-10
-            xl:w-13 xl:h-14
-            2xl:w-16 2xl:h-18">
+            <input type="text" placeholder="Add location" class="text-center items-center justify-center rounded-l-xl shadow-md text-[#8a8b8b] w-60 h-17 px-4  text-[17px] outline-none md:w-30 md:h-10 md:text-[11px] xl:w-35 xl:h-14 xl:px-4 xl:text-[14px] 2xl:w-50 2xl:h-18 2xl:px-4 2xl:text-[15px]"></input>   
+            <input type="text" placeholder="Add guests" class="text-center items-center justify-center shadow-md text-[#8a8b8b] w-60 h-17 px-4 text-[17px] outline-none md:w-30 md:h-10 md:text-[11px] xl:w-35 xl:h-14 xl:px-4  xl:text-[14px] 2xl:w-50 2xl:h-18 2xl:px-4 2xl:text-[15px]"></input> 
+            <button class="flex w-20 h-17 text-center items-center justify-center rounded-r-xl shadow-md cursor-pointer md:w-13 md:h-10 xl:w-13 xl:h-14 2xl:w-16 2xl:h-18">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-4 text-[#eb5656] md:size-3 xl:size-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                 </svg>
             </button>
         </div>        
     </header>
-    <div class="flex items-center justify-center text-center gap-60 py-4 -mb-6 lg:grid md:gap-116 lg:grid-cols-2 xl:gap-160 2xl:gap-215"> 
+    <div class="flex items-center justify-center gap-60 py-4 -mb-6 md:gap-116 lg:justify-between lg:gap-100 lg:mx-13 xl:gap-160 2xl:gap-215"> 
         <h1 class="text-[32px] font-semibold text-[#252525] md:text-[24px] xl:text-[30px] 2xl:text-[32px]">Stays in Finland</h1>
-        <h2 class="text-[16px] font-semibold text-[#666868] md:text-[12px] lg:-mr-35 xl:text-[15px] 2xl:text-[17px]">12+ stays</h2>
+        <h2 class="text-[16px] font-semibold text-[#666868] md:text-[12px] xl:text-[15px] 2xl:text-[17px]">12+ stays</h2>
     </div> 
     <div class="md:grid md:grid-cols-2 md:justify-center lg:grid lg:grid-cols-3 lg:px-7">
         <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
-            <div class="w-150 h-100 rounded-3xl overflow-hidden
-            md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
                 <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
             </div>
             <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
@@ -63,30 +53,7 @@
             <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
         <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
-            <div class="w-150 h-100 rounded-3xl overflow-hidden
-            md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
-                <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
-            </div>
-            <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
-                <p class="text-[20px] font-medium text-[#868888] mt-2 md:text-[13px] xl:text-[15px] 2xl:text-[17px]">Entire apartament .2 beds</p>
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 24 24" 
-                        stroke-width="1.5" 
-                        stroke="currentColor" 
-                        fill="#eb5656" 
-                        class="size-5 md:size-3 text-[#eb5656]">
-                            <path stroke-linecap="round" stroke-linejoin="round" 
-                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                    </svg>  
-                    <p class="text-[20px] font-semibold text-[#454646] md:text-[13px] xl:text-[15px] 2xl:text-[16px]">4.4</p>                 
-                </div>
-            </div>
-            <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
-        </div>        
-        <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
-            <div class="w-150 h-100 rounded-3xl overflow-hidden
-            md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
                 <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
             </div>
             <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
@@ -107,8 +74,7 @@
             <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
         <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
-            <div class="w-150 h-100 rounded-3xl overflow-hidden
-            md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
                 <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
             </div>
             <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
@@ -129,8 +95,7 @@
             <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
         <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
-            <div class="w-150 h-100 rounded-3xl overflow-hidden
-            md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
                 <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
             </div>
             <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
@@ -151,8 +116,7 @@
             <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
         <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
-            <div class="w-150 h-100 rounded-3xl overflow-hidden
-            md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
                 <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
             </div>
             <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
@@ -172,170 +136,127 @@
             </div>
             <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
-
-
-
-    </div>   
-<!--     <header class="flex justify-between px-[4rem] mt-5">
-        <img src="./src/images/icons/logo-f7862584.svg" class="w-28 " alt="logo-windbnb">
-        <div class="flex gap-[1px] font-medium">
-            <input type="text" placeholder="Add location" class="text-center items-center justify-center rounded-l-xl shadow-md text-[#8a8b8b] w-35 h-14 px-4  text-[14px] outline-none"></input>   
-            <input type="text" placeholder="Add guests" class="text-center items-center justify-center shadow-md text-[#8a8b8b] w-35 h-14 px-4 text-[14px] outline-none"></input> 
-            <button class="flex w-13 h-14 text-center items-center justify-center rounded-r-xl shadow-md cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-3 text-[#eb5656]">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>
-            </button>
+        <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+                <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
+                <p class="text-[20px] font-medium text-[#868888] mt-2 md:text-[13px] xl:text-[15px] 2xl:text-[17px]">Entire apartament .2 beds</p>
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        fill="#eb5656" 
+                        class="size-5 md:size-3 text-[#eb5656]">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>  
+                    <p class="text-[20px] font-semibold text-[#454646] md:text-[13px] xl:text-[15px] 2xl:text-[16px]">4.4</p>                 
+                </div>
+            </div>
+            <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
-    </header>
-    <div>
-        <div class="flex items-center justify-center">
-            <div class="flex flex-col w-[300px] rounded-l-xl shadow-md">
-                <label for="nombre" class="absolute pt-4 pl-7 text-[10px] font-bold text-[#4b4a4a]" >LOCATION</label>
-                <input type="text" placeholder="Add location" class="h-16 pt-5 pl-7 text-sm rounded-2xl">                
+        <div class="flex flex-col items-center mb-6 gap-1 md:gap-0 md:mb-5">
+            <div class="w-150 h-100 rounded-3xl overflow-hidden md:w-85 md:h-55 lg:w-76 lg:h-52 xl:w-98 xl:h-70 2xl:w-120 2xl:h-80">
+                <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
             </div>
-            <div class="flex flex-col w-[300px] shadow-md">
-                <label for="nombre" class="absolute pt-4 pl-7 text-[10px] font-bold text-[#4b4a4a]" >GUESTS</label>
-                <input type="Add guests" placeholder="Add guests" class="h-16 pt-6 pl-7 text-sm rounded-2xl"> 
+            <div class="flex text-center gap-63 items-center md:gap-25 xl:gap-32 2xl:gap-43">
+                <p class="text-[20px] font-medium text-[#868888] mt-2 md:text-[13px] xl:text-[15px] 2xl:text-[17px]">Entire apartament .2 beds</p>
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        fill="#eb5656" 
+                        class="size-5 md:size-3 text-[#eb5656]">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>  
+                    <p class="text-[20px] font-semibold text-[#454646] md:text-[13px] xl:text-[15px] 2xl:text-[16px]">4.4</p>                 
+                </div>
             </div>
-            <div class="flex items-center justify-center w-[300px] rounded-r-xl shadow-md h-16">
-                <button class="flex items-center justify-center h-11 w-35 bg-[#eb5656] rounded-2xl gap-1.5 cursor-pointer">                    
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-4 text-[#ffffff]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>                                         
-                    <p class="text-[#ffffff]">search</p>                      
-                </button>
-            </div>
+            <p class="font-semibold text-[#333333] text-[21px] -ml-40 md:-ml-13 md:text-[13px] xl:text-[16px] 2xl:text-[18px] 2xl:-ml-21 ">Stylist apartament in center of the city</p>           
         </div>
-        <div class="flex items-center justify-center mr-75">
-            <div class="flex flex-col w-[300px] h-60 items-start justify-center gap-3">
-                <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7">
-                    <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
-                    </svg>
-                    <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
-                </div>
-                <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7">
-                    <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
-                    </svg>
-                    <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
-                </div>
-                <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7">
-                    <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
-                    </svg>
-                    <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
-                </div>
-                <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7">
-                    <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
-                    </svg>
-                    <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
-                </div>
-                <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7">
-                    <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
-                    </svg>
-                    <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
-                </div>
-                <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7">
-                    <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
-                    </svg>
-                    <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
-                </div>         
-            </div>
-            <div class="flex flex-col w-[300px] h-60 items-start justify-center pl-7 gap-8">
-                <div>
-                    <p class="font font-semibold text-[14px]">Adults</p>
-                    <p class="font font-semibold text-[13px] text-[#969494] pb-2">Ages 13 or above</p>
-                    <div class="flex gap-5 items-center text-center justify-between">
-                        <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">-</button>
-                        <p class="font-semibold">4</p>
-                        <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">+</button>
-                    </div>
-                </div>
-                <div>
-                    <p class="font font-semibold text-[14px]">Children</p>
-                    <p class="font font-semibold text-[13px] text-[#969494] pb-2">Ages 13 or above</p>
-                    <div class="flex gap-5 items-center text-center justify-between">
-                        <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">-</button>
-                        <p class="font-semibold">1</p>
-                        <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">+</button>
-                    </div>
-                </div>    
-            </div>
-        </div>       
     </div>
-    <div class="flex px-[4rem] items-center justify-between"> 
-        <h1 class="text-[28px] font-semibold ">Stays in Finland</h1>
-        <h2 class="text-[14px] font-medium ">12+ stayss</h2>
-    </div>    
-    <div class="flex px-[4rem] justify-between">
-        <div class="flex flex-col gap-2">
-            <div class="w-98 h-70 rounded-3xl  overflow-hidden">
-                <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
+    
+
+    <div class="absolute w-full">
+        <div class="h-[500px] md:h-[350px] bg-white">
+            <div class="flex justify-center gap-100 my-5 md:hidden">
+                <p class="flex font-semibold">Edit your search</p>
+                <svg class="w-6 h-6 text-[#252525]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18 17.94 6M18 18 6.06 6"/>
+                </svg>            
             </div>
-            <div class="flex text-center items-center justify-between px-3">
-                <p class="text-[17px] font-medium text-[#868888]">Entire apartament .2 beds</p>
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 24 24" 
-                        stroke-width="1.5" 
-                        stroke="currentColor" 
-                        fill="#eb5656" 
-                        class="size-5 text-[#eb5656]">
-                            <path stroke-linecap="round" stroke-linejoin="round" 
-                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                    </svg>  
-                    <p class="text-[15px] font-semibold text-[#454646]">4.4</p>                 
+            <div class="flex flex-col items-center md:pt-5 md:flex-row md:justify-center">
+                <div class="flex flex-col w-[600px] h-[80px] rounded-t-xl shadow-md md:w-[200px] md:h-16 md:rounded-l-xl lg:w-[250px]">
+                    <label for="nombre" class="absolute pt-6 pl-7 text-[12px] font-bold text-[#4b4a4a] md:text-[10px] md:pt-3" >LOCATION</label>
+                    <input type="text" placeholder="Add location" class="h-16 pt-10 pl-7 text-[15px] rounded-2xl md:text-[14px] md:pt-4">                
                 </div>
-            </div>
-            <p class="px-3 font-semibold text-[#333333] text-[18px]">Stylist apartament in center of the city</p>           
-        </div>
-        <div class="flex flex-col gap-2">
-            <div class="w-98 h-70 rounded-3xl  overflow-hidden">
-                <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
-            </div>
-            <div class="flex text-center items-center justify-between px-3">
-                <p class="text-[17px] font-medium text-[#868888]">Entire apartament .2 beds</p>
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 24 24" 
-                        stroke-width="1.5" 
-                        stroke="currentColor" 
-                        fill="#eb5656" 
-                        class="size-5 text-[#eb5656]">
-                            <path stroke-linecap="round" stroke-linejoin="round" 
-                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                    </svg>  
-                    <p class="text-[15px] font-semibold text-[#454646]">4.4</p>                 
+                <div class="flex flex-col w-[600px] h-[80px] rounded-b-xl shadow-md md:w-[200px] md:h-16 md:rounded-none lg:w-[200px]">
+                    <label for="nombre" class="absolute pt-6 pl-7 text-[12px] font-bold text-[#4b4a4a] md:text-[10px] md:pt-3" >GUESTS</label>
+                    <input type="Add guests" placeholder="Add guests" class="h-16 pt-10 pl-7 text-[15px] rounded-2xl md:text-[14px] md:pt-4 "> 
                 </div>
-            </div>
-            <p class="px-3 font-semibold text-[#333333] text-[18px]">Stylist apartament in center of the city</p>           
-        </div>
-        <div class="flex flex-col gap-2">
-            <div class="w-98 h-70 rounded-3xl  overflow-hidden">
-                <img src="./src/images/picture/1.jpeg"  class="w-full h-full object-cover" alt="">
-            </div>
-            <div class="flex text-center items-center justify-between px-3">
-                <p class="text-[17px] font-medium text-[#868888]">Entire apartament .2 beds</p>
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 24 24" 
-                        stroke-width="1.5" 
-                        stroke="currentColor" 
-                        fill="#eb5656" 
-                        class="size-5 text-[#eb5656]">
-                            <path stroke-linecap="round" stroke-linejoin="round" 
-                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                    </svg>  
-                    <p class="text-[15px] font-semibold text-[#454646]">4.4</p>                 
+                <div class="flex items-center justify-center absolute w-[300px] rounded-r-xl mt-100 md:static md:mt-0 md:w-[200px] md:shadow-md md:h-16 md:rounded-r-xl lg:w-[250px]">
+                    <button class="flex items-center justify-center h-11 w-35 bg-[#eb5656] rounded-2xl gap-1.5 cursor-pointer md:flex md:items-center md:justify-center md:h-9 md:w-25 md:bg-[#eb5656] md:rounded-2xl md:gap-1.5 md:cursor-pointer">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="hidden size-4 text-[#ffffff]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>                                         
+                        <p class="text-[#ffffff]">search</p>                      
+                    </button>
                 </div>
-            </div>
-            <p class="px-3 font-semibold text-[#333333] text-[18px]">Stylist apartament in center of the city</p>           
+            </div>    
+            <div class="md:flex md:gap-5 md:justify-center md:-ml-22 lg:-ml-34">
+                <div class="hidden md:flex md:flex-col md:mt-6">
+                    <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7 md:w-[150]">
+                        <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
+                    </div>
+                    <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7 md:w-[150]">
+                        <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
+                    </div>
+                    <div class="flex gap-2 cursor-pointer hover:bg-gray-100 pr-9 pl-7 md:w-[150]">
+                        <svg class="w-4 h-4 text-[#4b4a4a]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-[#646363] font-medium">Vaasa, Finland</p>   
+                    </div>     
+                </div>
+                <div class="flex items-center justify-center mr-75 md:mr-0">
+                    <div class="flex flex-col w-[300px] items-start justify-center pt-6 pl-2 gap-8 lg:ml-12">
+                        <div>
+                            <p class="font font-semibold text-[15px] md:text-[13px]">Adults</p>
+                            <p class="font font-semibold text-[13px] text-[#969494] pb-2">Ages 13 or above</p>
+                            <div class="flex gap-5 items-center text-center justify-between">
+                                <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">-</button>
+                                <p class="font-semibold">4</p>
+                                <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">+</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font font-semibold text-[15px] md:text-[13px]">Children</p>
+                            <p class="font font-semibold text-[13px] text-[#969494] pb-2">Ages 13 or above</p>
+                            <div class="flex gap-5 items-center text-center justify-between">
+                                <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">-</button>
+                                <p class="font-semibold">1</p>
+                                <button class="border-[1.5px] w-6 h-6 rounded-md border-[#9b9999] text-[#4b4a4a] bg-[#d8d6d6] cursor-pointer">+</button>
+                            </div>
+                        </div>    
+                    </div>
+                </div> 
+            </div>                      
         </div>
-    </div> -->
+        <div class="h-dvh bg-blue-950 opacity-40">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </body>
 </html>
